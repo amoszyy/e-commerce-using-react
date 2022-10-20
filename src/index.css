@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.signupbody {
+  background-color: #ff6348;
+  height: 100vh;
+}
+.whiteround {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: white;
+}
+.bottomround {
+  width: 220px;
+  height: 220px;
+  border-radius: 200px;
+  position: fixed;
+  background-color: antiquewhite;
+  bottom: 0;
+  right: 0;
+}
+.signupcontain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.innersignup {
+  /* background-color: azure; */
+  width: 60%;
+  height: 80vh;
+  border-radius: 20px;
+  
+}
+.stylebtn {
+  background-color: #ff6348;
+}
+.lineborder{
+  border-right: 5px solid rgb(216, 216, 243);
+}
+@media  screen and (min-width: 601px) and (max-width: 780px) {
+  .innersignup{
+    height: 40vh;
+  }
+}
+.homebody{
+  background-color: #ff6348;
+  height: 100vh;
+
+}
+.homeTopcontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.homeTopimagecontainer{
+
+  height: 75vh;
+  /* width: 50%; */
+  background-image: url(images/homeimage.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+   
+
+ 
+}
+.topdashboard{
+  height: 7vh;
+  background-color: #ff6348;
+  text-align: center;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.topdashboard span{
+  background-color: yellow;
+  color: brown;
+}
+.dashboardbody{
+  height: 100vh;
+  background-color: #ff6348;
+  display: flex;
+  justify-content: center;
+}
+
+
+*{
+  margin:0;
+  padding:0;
+  text-decoration: none;
+}
+.container{
+  display:flex;
+}
+main{
+  width: 100%;
+  padding: 20px;
+}
+.sidebar{
+  background: #ff6348;
+  color: #fff;
+  height: 100vh;
+  width: 200px;
+  transition: all 0.5s;
+}
+.top_section{
+  display: flex;
+  align-items:center;
+  padding:20px 15px;
+}
+.logo{
+  font-size: 30px;
+}
+.bars{
+  display: flex;
+  font-size: 25px;
+  margin-left: 50px;
+}
+.link{
+  display: flex;
+  color: #fff;
+  padding: 10px 15px;
+  gap: 15px;
+  transition: all 0.5s;
+}
+.link:hover{
+  background:lightskyblue;
+  color: #000;
+  transition: all 1.0s;
+}
+.active{
+  background: lightskyblue;
+  color: #000;
+}
+.icon, .link_text{
+  font-size: 20px;
+}
+/* .searchinput  {
+  position: relative;
+  border: 1px solid red !important;
+  /* background-color: red; */
+/* } */
+.searchinput:focus {
+  outline: none;
+ }
+ #topicons{
+  margin-top: 5px;
+ }
+ .uploadbody{
+  background-color: #ff6348;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+ }
+
+
+
