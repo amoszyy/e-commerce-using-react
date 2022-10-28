@@ -71,7 +71,7 @@ const Sellersignup = () => {
                     </div>
                     {/* <div className='col-md-1'></div> */}
                   <div className='col-md-5 my-3 d-none d-md-block'>
-                    <img src={commercesignup} className='w-100 h-75'  alt="" />
+                    <img src={commercesignup} className='w-100 h-50'  alt="" />
                   </div>
                     
                     

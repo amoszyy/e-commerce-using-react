@@ -66,12 +66,12 @@ const Sellerlogin = () => {
                     <div className='col-md-6  lineborder'>
                     <input type="text" className={formik.errors.email?'form-control my-2 is-invalid':'form-control my-2'} placeholder='email' onChange={formik.handleChange} name="email" onBlur={formik.handleBlur}/>  {formik.touched.email &&<div className='text-danger'>{formik.errors.email}</div>} 
                         <input type="text" className={formik.errors.password?'form-control my-2 is-invalid':'form-control my-2'} placeholder='password' onChange={formik.handleChange} name="password" onBlur={formik.handleBlur}/>  {formik.touched.password &&<div className='text-danger'>{formik.errors.password}</div>} 
-                        <button className='btn btn-outline-dark w-100'>signup</button>
+                       <Link to={'/signup'}> <button className='btn btn-outline-dark w-100'>signup</button></Link>
                         <button className='stylebtn btn  shadow btn-outline-dark w-100 my-2' onClick={login}>login</button>
                     </div>
                     {/* <div className='col-md-1'></div> */}
                   <div className='col-md-5 my-3 d-none d-md-block'>
-                    <img src={commercesignup} className='w-100 h-75'  alt="" />
+                    <img src={commercesignup} className='w-100 h-50'  alt="" />
                   </div>
                     
                     

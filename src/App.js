@@ -9,6 +9,8 @@ import Dashboard from './pages/Dashboard';
 import Sidebar from './components/Sidebar';
 import Uploadproduct from './pages/Uploadproduct';
 import Sellerlogin from './pages/Sellerlogin';
+import DisplaytraderProducts from './pages/DisplaytraderProducts';
+import Usercart from './pages/Usercart';
 
 
 function App() {
@@ -20,9 +22,11 @@ function App() {
     <Route path='/' element={<Home/>}/>
     <Route path='/signup' element={<Signup/>}/>
     <Route path="/login" element={<Login />} />
+    <Route path='/usercart' element={<Usercart/>}/>
     <Route path="/sellersignup" element={<Sellersignup/>} />
     <Route path='/sellerlogin' element={<Sellerlogin/>}/>
     <Route path='/dashboard' element={<Dashboard/>}/>
+    <Route path='/traderproducts' element={<DisplaytraderProducts/>}/>
    </Routes>
 
    </>

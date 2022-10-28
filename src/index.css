@@ -87,7 +87,7 @@ code {
   color: brown;
 }
 .dashboardbody{
-  height: 100vh;
+  height: auto;
   background-color: #ff6348;
   display: flex;
   justify-content: center;
@@ -163,6 +163,20 @@ main{
   align-items: center;
 
  }
+ .productdiv{
+  height: 250px;
+  padding-bottom: 49px !important;
+ }
+ /* .product{
+  
+ } */
+ .productname{
+  margin-bottom: -10px;
+ }
+ .productdescription{
+  margin-bottom: -19px;
+ }
+
 
 
 

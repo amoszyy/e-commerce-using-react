@@ -59,7 +59,7 @@ const Signup = () => {
                         <input type="text" className={formik.errors.password?'form-control my-2 is-invalid':'form-control my-2'} placeholder='password' onChange={formik.handleChange} name="password" onBlur={formik.handleBlur}/>  {formik.touched.password &&<div className='text-danger'>{formik.errors.password}</div>} 
                         <input type="number" className={formik.errors.phonenumber?'form-control my-2 is-invalid':'form-control my-2'} placeholder='phonenumber' onChange={formik.handleChange} name="phonenumber" onBlur={formik.handleBlur}/>  {formik.touched.phonenumber &&<div className='text-danger'>{formik.errors.phonenumber}</div>} 
                         <button className='btn btn-outline-dark w-100' onClick={regUser}>signup</button>
-                        <button className='stylebtn btn text-white shadow btn-outline-dark w-100 my-2'>login</button>
+                       <Link to={'/login'}> <button className='stylebtn btn text-white shadow btn-outline-dark w-100 my-2'>login</button></Link>
                     </div>
                     {/* <div className='col-md-1'></div> */}
                   <div className='col-md-5 my-3 d-none d-md-block'>

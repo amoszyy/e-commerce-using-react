@@ -1,13 +1,20 @@
 import React from 'react'
 import { useState } from 'react'
 import axios from 'axios'
-
+import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 const Uploadproduct = () => {
+  useEffect(() => {
+    displaytraderProduct()
+ 
+  }, [])
+  
     const [myfile, setmyfile] = useState("")
     const [price, setprice] = useState(0)
     const [description, setdescription] = useState("")
     const [imageurl, setimageurl] = useState("")
     const [productname, setproductname] = useState("")
+    const [productarray, setproductarray] = useState([])
     const getfile = (e)=>{
         console.log(e.target.files[0])
         const pickedFile = e.target.files[0]
@@ -22,14 +29,26 @@ const Uploadproduct = () => {
     const uploadProduct = ()=>{
       let uploadpoint =  "http://localhost:5008/product/uploadproduct" 
       let token = localStorage.token
+      let uid = Math.floor(100000 + Math.random() * 900000);
      
-      let uploadDetails = {myfile, productname, imageurl, token, price, description}
+      let uploadDetails = {myfile, productname, imageurl, token, price, description,uid}
       axios.post(uploadpoint, uploadDetails).then((result)=>{
         console.log(result)
         console.log(result.data.uploadedimage)
         setimageurl(result.data.uploadedimage)
       })
 
+    }
+
+    const displaytraderProduct= ()=>{
+      let productPoint = "http://localhost:5008/product/displaytraderproduct" 
+      let token = localStorage.token
+      let productDetails = {token}
+      axios.post(productPoint, productDetails).then((result)=>{
+        console.log(result)
+        console.log(result.data.result)
+        setproductarray(result.data.result)
+      })
     }
 
 
@@ -44,6 +63,7 @@ const Uploadproduct = () => {
           <input type="text" placeholder='description'  className='form-control my-2'  onChange={(e)=>setdescription(e.target.value)}/>
           <input type="file" placeholder='upload relevant image...' className='form-control my-2' onChange={(e)=>getfile(e)} />
           <button className='btn btn-light w-100'  data-bs-toggle="modal" data-bs-target="#modelId">upload</button>
+          <Link to={"/traderproducts"}><button className='btn btn-dark w-100 my-2' type='button'><b>view your products.</b></button></Link>
           </div>
 
         </div>
@@ -75,6 +95,8 @@ const Uploadproduct = () => {
       </div>
     </div>
   </div> 
+
+
     </>
   )
 }
