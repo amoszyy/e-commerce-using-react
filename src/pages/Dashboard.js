@@ -22,11 +22,7 @@ const Dashboard = () => {
     getallProducts()
     
     }, [])
-    useEffect(() => {
-      addtocart()
   
-    }, [selectedproductuid])
-    
   
   const [productsarray, setproductsarray] = useState([])
 
