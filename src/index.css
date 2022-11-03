@@ -86,12 +86,12 @@ code {
   background-color: yellow;
   color: brown;
 }
-.dashboardbody{
+/* .dashboardbody{
   height: auto;
   background-color: #ff6348;
   display: flex;
   justify-content: center;
-}
+} */
 
 
 *{
@@ -145,11 +145,7 @@ main{
 .icon, .link_text{
   font-size: 20px;
 }
-/* .searchinput  {
-  position: relative;
-  border: 1px solid red !important;
-  /* background-color: red; */
-/* } */
+
 .searchinput:focus {
   outline: none;
  }
@@ -165,20 +161,40 @@ main{
  }
  .productdiv{
   height: 250px;
-  padding-bottom: 49px !important;
- }
- /* .product{
+  padding-bottom: 29px !important;
+  overflow: hidden;
   
- } */
+  
+ }
+
  .productname{
+ 
   margin-bottom: -10px;
+
  }
+ .producttext{
+ 
+  margin-bottom: -10px;
+
+  
+ }
+ .producttext:hover {
+  overflow: visible;
+}
+
  .productdescription{
-  margin-bottom: -19px;
+  margin-bottom: -1px;
+
+
  }
+
  .cartbody{
-  height: 100vh;
+  height: auto;
  }
+ .cartbutton{
+  background-color: #ff6348;
+ }
+
 
 
 
